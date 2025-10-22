@@ -313,8 +313,8 @@ void Get_Spi_Return_Data(uint8_t *Data);
 /**************************模式切换****************************/
 /**************************模式切换****************************/
 /**************************模式切换****************************/
-volatile host_driver_t *es_qmk_driver;
-const    host_driver_t es_user_driver;
+volatile        host_driver_t *es_qmk_driver;
+extern const    host_driver_t es_user_driver;
 
 uint8_t es_keyboard_leds(void);
 void es_send_keyboard(report_keyboard_t *report);

@@ -10,7 +10,8 @@ DYNAMIC_KEYMAP_ENABLE = yes
 NO_USB_STARTUP_CHECK = yes
 BLUETOOTH_CUSTOM = yes
 
-ENCODER_MAP_ENABLE = yes    # Enable ENCODER MAP
+ENCODER_ENABLE = no
+ENCODER_MAP_ENABLE = no
 DEBOUNCE_TYPE = asym_eager_defer_pk
 
 LDFLAGS += -L$(PWD)/lib/rdr_lib -lrdrcommon
