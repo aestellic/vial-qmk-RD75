@@ -89,6 +89,10 @@ void board_init(void) {
 
 void keyboard_post_init_user(void) {
     User_Keyboard_Post_Init();
+    debug_enable=true;
+    debug_matrix=false;
+    debug_keyboard=true;
+    debug_mouse=false;
 }
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {   /*键盘只要有按键按下就会调用此函数*/
